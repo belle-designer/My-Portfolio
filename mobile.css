@@ -1,0 +1,115 @@
+:root {
+    /* Define color variables */
+    --primary-color: #440A67;
+    --secondary-color: #FFE3FE;
+    --text-color: #EEF2F5;
+    --hover-color: #FF8FE5;
+    
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navlinks {
+        display: none;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        position: absolute;
+        z-index: 10;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        padding: 20px 40px;
+    }
+
+    .navlinks.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+
+    /* Image Container */
+    .img-container {
+        margin-top: 40px;
+        padding: 20px;
+    }
+
+
+    /* Image styling */
+    .img-container img {
+        width: 100%;
+        max-width: 180px;
+        object-fit: cover;
+
+    }
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+
+    /* Text Content */
+    .home-info p {
+        font-size: .9rem;
+
+    }
+
+    .home-info h1 {
+        font-size: 1.3rem;
+
+    }
+
+    .about-container {
+        display: flex;
+        flex-direction: column;
+        }
+    
+    .about-info {
+        text-align: center;
+        width: 300px;
+    }
+    
+    .about-info h1 {
+        font-size: 1.4rem;
+        letter-spacing: 2px;
+    }
+    
+    .about-info p {
+        text-align: justify;
+        font-size: 0.8rem;
+        letter-spacing: 1px;
+    }
+
+    .resume-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .resume-box {
+        color: var(--primary-color);
+        background-color: var(--secondary-color);
+        width: 250px;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .contact {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: auto;
+        padding: 100px 40px;
+        background-color: var(--secondary-color);
+    }
+
+}
